@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Facade\FlareClient\Http\Response;
 use Illuminate\Http\Request;
+use App\Exports\SiswaExport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class SiswaController extends Controller
 {
@@ -46,6 +48,13 @@ class SiswaController extends Controller
 
     public function destroy($id)
     {
-        //
+        $siswa = \App\Siswa::find($id);
+        $siswa->delete();
+        return redirect('/siswa')->with('success', 'Data Berhasil di hapus');
+    }
+
+    public function excel()
+    {
+        return Excel::download(new SiswaExport, 'siswa.xlsx');
     }
 }
