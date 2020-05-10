@@ -22,6 +22,8 @@ class BukuSeeder extends Seeder
             $table->string('no_isbn', 50)->nullable();
             $table->string('nama', 255);
             $table->string('kategori', 50);
+            $table->mediumText('deskripsi');
+            $table->string('lokasi', 50);
             $table->integer('jumlah')->default(0);
             $table->integer('dipinjam')->default(0);
             */
@@ -31,8 +33,9 @@ class BukuSeeder extends Seeder
                 'kd_buku' => Str::random(4),
                 'no_isbn' => Str::random(10),
                 'nama' => $faker->title,
-                'deskripsi' => $faker->title,
-                'kategori' => '1'
+                'kategori' => '01',
+                'lokasi' => 'A.1.1',
+                'deskripsi' => $faker->title
     		]);
 
     	}

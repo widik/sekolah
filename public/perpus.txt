@@ -49,3 +49,8 @@ php artisan make:model kategori_buku
 php artisan make:seeder BukuSeeder
 
 php artisan make:migration drop_buku_table
+
+
+php artisan db:seed --class=SiswaSeeder
+
+php artisan db:seed --class=BukuSeeder
