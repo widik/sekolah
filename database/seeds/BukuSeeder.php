@@ -3,6 +3,7 @@
 use Illuminate\Database\Seeder;
 use Faker\Factory as Faker;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class BukuSeeder extends Seeder
 {
@@ -27,10 +28,11 @@ class BukuSeeder extends Seeder
 
     	    // insert data ke table buku menggunakan Faker
     		DB::table('buku')->insert([
-    			'kd_buku' => $faker->firstName,
-    			'no_isbn' => $faker->lastName,
+                'kd_buku' => Str::random(4),
+                'no_isbn' => Str::random(10),
                 'nama' => $faker->title,
-                'kategori' => 'Katholik'
+                'deskripsi' => $faker->title,
+                'kategori' => '1'
     		]);
 
     	}

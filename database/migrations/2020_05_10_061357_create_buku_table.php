@@ -23,7 +23,10 @@ class CreateBukuTable extends Migration
             $table->integer('jumlah')->default(0);
             $table->integer('dipinjam')->default(0);
             $table->timestamps();
+
+            $table->primary('kd_buku');
         });
+
     }
 
     /**
