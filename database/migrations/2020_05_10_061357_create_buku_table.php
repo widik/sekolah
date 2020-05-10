@@ -19,12 +19,11 @@ class CreateBukuTable extends Migration
             $table->string('no_isbn', 50)->nullable();
             $table->string('nama', 255);
             $table->string('kategori', 50);
-            $table->string('deskripsi', 50);
+            $table->mediumText('deskripsi');
+            $table->string('lokasi', 50);
             $table->integer('jumlah')->default(0);
             $table->integer('dipinjam')->default(0);
             $table->timestamps();
-
-            $table->primary('kd_buku');
         });
 
     }

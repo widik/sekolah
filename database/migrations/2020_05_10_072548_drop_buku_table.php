@@ -13,7 +13,7 @@ class DropBukuTable extends Migration
      */
     public function up()
     {
-        //
+        //Schema::drop('buku');
     }
 
     /**

@@ -25,6 +25,13 @@
     <link href="{{asset('gentelella/vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet')}}"/>
     <!-- bootstrap-daterangepicker -->
     <link href="{{asset('gentelella/vendors/bootstrap-daterangepicker/daterangepicker.css')}}" rel="stylesheet">
+    <!-- Datatables -->
+
+    <link href="{{asset('gentelella/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('gentelella/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('gentelella/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('gentelella/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('gentelella/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- Custom Theme Style -->
     <link href="{{asset('gentelella/build/css/custom.min.css')}}" rel="stylesheet">
@@ -241,6 +248,9 @@
       <!-- bootstrap-daterangepicker -->
       <script src="{{asset('gentelella/vendors/moment/min/moment.min.js')}}"></script>
       <script src="{{asset('gentelella/vendors/bootstrap-daterangepicker/daterangepicker.js')}}"></script>
+    <!-- Datatables -->
+    <script src="{{asset('gentelella/vendors/datatables.net/js/jquery.dataTables.min.js')}}"></script>
+    <script src="{{asset('gentelella/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js')}}"></script>
 
       <!-- Custom Theme Scripts -->
       <script src="{{asset('gentelella/build/js/custom.min.js')}}"></script>
