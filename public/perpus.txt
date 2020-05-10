@@ -35,3 +35,15 @@ per hari (Rp), max. perpanjangan, penyajian grafik data
 22. Backup database, optimasi database, reset database, dan restore database
 23. Ganti kata sandi
 24. Lockscreen
+
+
+
+php artisan make:migration create_buku_table --create=buku
+
+php artisan make:migration create_kategori_buku_table --create=kategori_buku
+
+php artisan make:model buku
+
+php artisan make:model kategori_buku
+
+php artisan make:seeder BukuSeeder
