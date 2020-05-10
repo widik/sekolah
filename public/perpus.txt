@@ -1,0 +1,37 @@
+1. Buku tamu :
+a. Daftar buku untuk melakukan pelacakan deskripsi dan
+lokasi buku
+b. form pengisian pengunjung perpustakaan
+2. Login Administrator
+3. Verifikasi lupa kata sandi lewat email untuk user
+4. daftar 25 peminjaman aktif (berikut total peminjaman), 25 buku terpopuler yang sering dipinjam dan daftar 25 peminjam yang melewati tanggal jatuh tempo (terkena denda)
+5. Penyajian data peminjaman, pengembalian dan kunjungan dalam bentuk Grafik.
+6. daftar pengunjung hari tsb
+7. DATA MASTER
+a. Data Siswa/anggota (import excel)
+b. Data jurusan
+c. Data buku (import excel, cetak kode buku dalam bentuk QR-code)
+d. Data Klasifikasi buku
+e. Jenis bacaan
+8. User management
+9. Management hak akses per menu
+10. Management data peminjaman.
+11. Perhitungan otomatis siswa yang melewati masa jatuh tempo (jumlah hari, total hari, total denda)
+12. Tindak lanjut peminjaman (pengembalian, perpanjangan)
+13. Mampu memberi peringatan terkait peminjaman lewat Chat Whatsapp secara otomatis
+16. Form peminjaman Buku (otomatis membatasi peminajaman buku yang telah ditentukan)
+17. Management informasi aplikasi :
+- nama sekolah, alamat, website, email, No. telepon
+18. Management Sistem aplikasi :
+-. lama hari peminjaman, quantity buku yg dipinjam, denda
+per hari (Rp), max. perpanjangan, penyajian grafik data
+19. Laporan
+- Laporan transaksi perpustakaan
+- laporan kunjungan perpustakaan
+- laporan kas perpustakaan
+- pemilihan periode waktu (perhari, perminggu, perbulan)
+20. Management kas perpustakaan pengeluaran dan pemasukan (Jika saat mengembalikan buku dikenai denda, otomatis data akan masuk ke kas dengan deskripsi nama siswa, total denda dan jumlah hari)
+21. Backup data siswa, peminjaman dan kas dalam format excel.
+22. Backup database, optimasi database, reset database, dan restore database
+23. Ganti kata sandi
+24. Lockscreen
