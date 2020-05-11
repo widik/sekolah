@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class DropBukuTable extends Migration
+class UpgDropHpSiswaTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,9 @@ class DropBukuTable extends Migration
      */
     public function up()
     {
-        //Schema::drop('buku');
+        Schema::table('siswa', function($table) {
+            $table->text('no_hp')->nullable()->change();
+        });
     }
 
     /**

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateKategoriBukuTable extends Migration
+class UpgSiswaTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateKategoriBukuTable extends Migration
      */
     public function up()
     {
-        Schema::create('kategori_buku', function (Blueprint $table) {
-            $table->id();
-            $table->string('kd_buku', 50);
-            $table->timestamps();
-            $table->engine = 'InnoDB';
-        });
+        Schema::table('siswa', function(Blueprint $table) {
+            $table->string('email', 50)->after('jenis_kelamin');
+            $table->string('no_hp')->after('alamat');
+            $table->text('alamat')->nullable()->change();
+         });
     }
 
     /**
@@ -28,6 +27,6 @@ class CreateKategoriBukuTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('kategori_buku');
+        //
     }
 }

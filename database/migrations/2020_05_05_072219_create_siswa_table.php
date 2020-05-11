@@ -21,6 +21,7 @@ class CreateSiswaTable extends Migration
             $table->string('agama');
             $table->string('alamat');
             $table->timestamps();
+            $table->engine = 'InnoDB';
         });
     }
 
