@@ -13,8 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', 'FrontController@index');
+Route::get('/elibrary', 'LibraryController@index');
 
-Route::get('/login', 'AuthController@login')->name('login');
+Route::get('elibrary/list', 'LibraryController@json');
+
+
+
+
+Route::get('elibraray/login', 'AuthController@login')->name('login');
 Route::post('/postlogin', 'AuthController@postlogin');
 
 Route::group(['middleware' => ['auth', 'checkRole:admin']], function () {

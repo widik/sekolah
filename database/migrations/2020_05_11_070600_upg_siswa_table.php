@@ -13,11 +13,11 @@ class UpgSiswaTable extends Migration
      */
     public function up()
     {
-        Schema::table('siswa', function(Blueprint $table) {
-            $table->string('email', 50)->after('jenis_kelamin');
-            $table->string('no_hp')->after('alamat');
-            $table->text('alamat')->nullable()->change();
-         });
+        // Schema::table('siswa', function(Blueprint $table) {
+        //     $table->string('email', 50)->after('jenis_kelamin');
+        //     $table->string('no_hp')->after('alamat');
+        //     $table->text('alamat')->nullable()->change();
+        //  });
     }
 
     /**
@@ -28,5 +28,12 @@ class UpgSiswaTable extends Migration
     public function down()
     {
         //
+        Schema::table('siswa', function (Blueprint $table) {
+            if (Schema::hasColumn('no_hp', 'email', 'alamat')) {
+                $table->dropColumn('no_hp', 'email', 'alamat');
+            }
+
+        });
+
     }
 }

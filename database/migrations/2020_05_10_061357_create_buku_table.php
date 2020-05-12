@@ -14,18 +14,19 @@ class CreateBukuTable extends Migration
     public function up()
     {
         Schema::create('buku', function (Blueprint $table) {
-            $table->id();
-            $table->string('kd_buku', 50);
-            $table->string('no_isbn', 50)->nullable();
-            $table->string('nama', 255);
-            $table->string('kategori', 50);
-            $table->mediumText('deskripsi');
-            $table->string('lokasi', 50);
-            $table->integer('jumlah')->default(0);
-            $table->integer('dipinjam')->default(0);
+            //$table->id();
+            $table->string('kd_buku')->primary()->index()->comment('FLAGS=KMI-L^');
+            $table->string('no_isbn', 50)->index()->nullable()->comment('FLAGS=A-IUL^');
+            $table->string('nama', 255)->comment('FLAGS=AMIUL^');
+            $table->string('kategori', 50)->comment('FLAGS=AMIUL^');
+            $table->mediumText('deskripsi')->nullable()->comment('FLAGS=A-IUL^');
+            $table->string('lokasi', 50)->comment('FLAGS=AMIUL^');
+            $table->integer('jumlah')->default(0)->comment('FLAGS=AMIUL^');
+            $table->integer('dipinjam')->default(0)->comment('FLAGS=AMIUL^');
             $table->timestamps();
-            $table->engine = 'InnoDB';
 
+            //$table->foreign('kategori')->references('kategori')->on('kategori_buku'); // Menjadikan kolom "kategori" sebagai foreign key dan mereferensi kolom kategori pada tabel kategori_buku
+            $table->engine = 'InnoDB';
         });
 
         // Schema::table('buku', function (Blueprint $table) {

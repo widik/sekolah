@@ -14,8 +14,8 @@ class CreateKategoriBukuTable extends Migration
     public function up()
     {
         Schema::create('kategori_buku', function (Blueprint $table) {
-            $table->id();
-            $table->string('kd_buku', 50);
+            //$table->id();
+            $table->string('kategori', 50)->primary();
             $table->timestamps();
             $table->engine = 'InnoDB';
         });

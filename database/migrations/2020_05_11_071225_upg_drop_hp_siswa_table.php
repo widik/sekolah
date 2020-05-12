@@ -13,9 +13,9 @@ class UpgDropHpSiswaTable extends Migration
      */
     public function up()
     {
-        Schema::table('siswa', function($table) {
-            $table->text('no_hp')->nullable()->change();
-        });
+        // Schema::table('siswa', function($table) {
+        //     $table->text('no_hp')->nullable()->change();
+        // });
     }
 
     /**

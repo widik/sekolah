@@ -54,59 +54,74 @@
             <div class="row">
                 <!-- Sidebar -->
                 <div class="col-md-4">
-                <div class="card mb-3">
-                <div class="card-header">
-                    <h4 class="text-mono text-center">E-Learning</h4>
-                </div>
-                <div class="card-body">
-                        <a href="/elearning">
-                            <img src="{{asset('gentelella/images/elearning.png')}}" style="height: 110px;" class="mx-auto d-block">
-                        </a>
-                        <br />
-                        <blockquote class="card-blockquote">
-                            <p class="text-center"><a href="/elearning">>> MASUK <<<</a></p>
-                        </blockquote>
-                </div>
-                </div>
-                <div class="card mb-3">
-                <div class="card-header">
-                    <h4 class="text-mono text-center">E-LIBRARY</h4>
-                </div>
-                <div class="card-body">
-                        <a href="/login">
-                            <img src="{{asset('gentelella/images/book.jpg')}}" style="height: 110px;" class="mx-auto d-block">
-                        </a>
-                        <br />
-                        <blockquote class="card-blockquote">
-                            <p class="text-center"><a href="/login">>> MASUK <<<</a></p>
-                        </blockquote>
-                </div>
-                </div>
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <h4 class="text-mono text-center">E-Learning</h4>
+                        </div>
+                        <div class="card-body">
+                            <a href="/elearning">
+                                <img src="{{asset('gentelella/images/elearning.png')}}" style="height: 110px;" class="mx-auto d-block">
+                            </a>
+                            <br />
+                            <blockquote class="card-blockquote">
+                                <p class="text-center"><a href="/elearning">>> MASUK <<<</a></p>
+                            </blockquote>
+                        </div>
+                    </div>
+                   <div class="card mb-3">
+                        <div class="card-header">
+                            <h4 class="text-mono text-center">E-LIBRARY</h4>
+                        </div>
+                        <div class="card-body">
+                            <a href="/login">
+                                <img src="{{asset('gentelella/images/book.jpg')}}" style="height: 110px;" class="mx-auto d-block">
+                            </a>
+                            <br />
+                            <blockquote class="card-blockquote">
+                                <p class="text-center"><a href="/elibrary">>> MASUK <<<</a></p>
+                            </blockquote>
+                        </div>
+                    </div>
                 </div>
                 <!-- Isi Content -->
                 <div class="col-md-8 mb-3">
-                <div class="card">
-                <div class="card-header">
-                    <h4 class="text-mono text-center">News</h4>
-                </div>
-                <div class="card-body">
-                    <img style="float:left;" src="https://place-hold.it/130x130" class="img mr-3" />
-                    <h5 class="card-title">News Article 1</h5>
-                    <small><p>19/07/2018</p></small>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="article.html">Read More</a>
-                    </p>
-                    <img style="float:left;" src="https://place-hold.it/130x130" class="img mr-3" />
-                    <h5 class="card-title">News Article 2</h5>
-                    <small><p>19/07/2018</p></small>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="article.html">Read More</a>
-                    </p>
-                    <img style="float:left;" src="https://place-hold.it/130x130" class="img mr-3" />
-                    <h5 class="card-title">News Article 3</h5>
-                    <small><p>19/07/2018</p></small>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="article.html">Read More</a>
-                    </p>
-                </div>
-                </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="text-mono text-center">News</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <img style="float:left;" src="https://place-hold.it/130x130" class="img mr-3" />
+                                    <h5 class="card-title">News Article 1</h5>
+                                    <small><p>19/07/2018</p></small>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="article.html">Read More</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-lg-12">
+                                    <img style="float:left;" src="https://place-hold.it/130x130" class="img mr-3" />
+                                    <h5 class="card-title">News Article 2</h5>
+                                    <small><p>19/07/2018</p></small>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="article.html">Read More</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-lg-12">
+                                    <img style="float:left;" src="https://place-hold.it/130x130" class="img mr-3" />
+                                    <h5 class="card-title">News Article 3</h5>
+                                    <small><p>19/07/2018</p></small>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="article.html">Read More</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

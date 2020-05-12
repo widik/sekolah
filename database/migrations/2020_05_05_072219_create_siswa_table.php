@@ -15,11 +15,13 @@ class CreateSiswaTable extends Migration
     {
         Schema::create('siswa', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_depan');
-            $table->string('nama_belakang');
-            $table->string('jenis_kelamin');
-            $table->string('agama');
-            $table->string('alamat');
+            $table->string('nis', 50)->index()->comment('FLAGS=AMIUL^');
+            $table->string('nama_depan')->comment('FLAGS=AMIUL^');
+            $table->string('nama_belakang')->comment('FLAGS=AMIUL^');
+            $table->string('jenis_kelamin')->comment('FLAGS=AMIUL^');
+            $table->string('agama')->comment('FLAGS=AMIUL^');
+            $table->string('avatar')->nullable()->comment('FLAGS=A-IUL^');
+            $table->string('alamat')->nullable()->comment('FLAGS=A-IUL^');
             $table->timestamps();
             $table->engine = 'InnoDB';
         });
