@@ -20,11 +20,13 @@ Route::get('elibrary/list', 'LibraryController@json');
 
 
 
-Route::get('elibraray/login', 'AuthController@login')->name('login');
+Route::get('elibrary/login', 'AuthController@login')->name('login');
 Route::post('/postlogin', 'AuthController@postlogin');
 
-Route::group(['middleware' => ['auth', 'checkRole:admin']], function () {
-    Route::get('/dashboard', 'PageController@index');
+Route::get('/elibrary/dashboard', 'LibraryController@dashboard');
+
+//Route::group(['middleware' => ['auth', 'checkRole:admin']], function () {
+
 
     Route::get('/siswa', 'SiswaController@index');
     Route::post('/siswa/create', 'SiswaController@create');
@@ -34,7 +36,8 @@ Route::group(['middleware' => ['auth', 'checkRole:admin']], function () {
     Route::get('/siswa/{id}/profil', 'SiswaController@profil');
     Route::get('/siswa/excel', 'SiswaController@excel')->name('excel');
     Route::get('/siswa/pdf','SiswaController@generatePDF');
-});
+    Route::post('/siswa/import_excel', 'SiswaController@import_excel');
+//});
 
 Route::group(['middleware' => ['auth', 'checkRole:siswa,admin']], function () {
     Route::get('/dashboard', 'PageController@index');

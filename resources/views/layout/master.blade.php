@@ -66,10 +66,10 @@
                             <div class="menu_section">
                                 <ul class="nav side-menu">
                                     <h3>General</h3>
-                                    {{-- @if (auth()->user()->role == "admin" )
+                                    @if (auth()->user()->role == "admin" )
                                         <li><a href="/siswa"><i class="fa fa-user"></i> Siswa</a></li>
 
-                                    @endif --}}
+                                    @endif
                                     <li><a href="/my-form"><i class="fa fa-user"></i> Contoh Validasi</a></li>
                                     <li><a href="/barcode"><i class="fa fa-user"></i> Contoh Barcode</a></li>
                                     <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
@@ -192,7 +192,7 @@
                                 </li>
 
                                 <li class="nav-item" style="padding-right: 10px;">
-                                    <a href="elibraray/login">Masuk</a>
+                                    <a href="elibrary/login">Masuk</a>
                                 </li>
 
                                 <li class="nav-item" style="padding-right: 10px;">

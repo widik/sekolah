@@ -497,7 +497,7 @@
                             <thead>
                                 <tr>
                                     <th>Kode </th>
-                                    <th>Nama</th>
+                                    <th>Judul Buku</th>
                                     <th>Lokasi</th>
                                 </tr>
                             </thead>
@@ -577,7 +577,7 @@
             serverSide: true,
             searching: false,
             bLengthChange: false,
-            ajax: "elibrary/list",
+            ajax: "{{url('elibrary/list')}}",
             columns: [
                 { data: 'kd_buku', name: 'kd_buku' },
                 { data: 'nama', name: 'nama' },

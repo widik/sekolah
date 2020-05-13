@@ -25,4 +25,9 @@ class LibraryController extends Controller
         return Datatables(buku::all())->toJson();
 
     }
+
+    public function dashboard()
+    {
+        return "dashboard";
+    }
 }

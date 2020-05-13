@@ -20,7 +20,9 @@ class SiswaExport implements FromCollection, WithMapping
     public function map($siswa): array
     {
         return [
-            $siswa->get_nama_lengkap(),
+            //$siswa->get_nama_lengkap(),
+            $siswa->nama_depan,
+            $siswa->nama_belakang,
             $siswa->jenis_kelamin,
             $siswa->agama,
             $siswa->alamat,
@@ -30,7 +32,8 @@ class SiswaExport implements FromCollection, WithMapping
     public function headings(): array
     {
         return [
-            'NAMA LENGKAP',
+            'NAMA DEPAM',
+            'NAMA BELAKANG',
             'JENIS KELAMIN',
             'AGAMA',
             'ALAMAT',
