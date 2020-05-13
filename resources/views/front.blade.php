@@ -145,7 +145,7 @@
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item">
-                                        <a href="#">Login</a>
+
                                     </li>
                                 </ol>
                             </nav>
@@ -198,7 +198,7 @@
                                         <div class="card-body">
                                             <div class="d-flex align-items-center">
                                                 <div class="m-r-10">
-                                                    <a href="">
+                                                    <a href="/elibrary">
                                                         <span class="btn btn-circle btn-lg btn-info">
                                                             <i class="ti-wallet text-white"></i>
                                                         </span>

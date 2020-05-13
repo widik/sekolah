@@ -28,6 +28,7 @@ class LibraryController extends Controller
 
     public function dashboard()
     {
-        return "dashboard";
+        $data['title'] = "Sistem Informasi Sekolah";
+        return view('elibrary.dashboard', ['data'=>$data]);
     }
 }

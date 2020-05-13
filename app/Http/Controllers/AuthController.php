@@ -21,6 +21,22 @@ class AuthController extends Controller
         return redirect('/elibrary');
     }
 
+    public function dologin(Request $request)
+    {
+
+        if (Auth::attempt($request->only('email', 'password'))){
+            //return redirect('elibrary/dashboard');
+            return response()->json(['action'=>'/elibrary/dashboard']);
+        }
+        //return redirect('/elibrary');
+
+        return response()->json(['error'=>'Email/Password salah.']);
+        // if (Auth::attempt($request->only('email', 'password'))){
+        //     return redirect('elibrary/dashboard');
+        // }
+        // return redirect('/elibrary');
+    }
+
     public function logout()
     {
         Auth::logout();

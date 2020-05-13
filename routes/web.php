@@ -17,11 +17,8 @@ Route::get('/elibrary', 'LibraryController@index');
 
 Route::get('elibrary/list', 'LibraryController@json');
 
-
-
-
-Route::get('elibrary/login', 'AuthController@login')->name('login');
-Route::post('/postlogin', 'AuthController@postlogin');
+Route::get('/elibrary/login', 'AuthController@login')->name('login');
+Route::post('/elibrary/postlogin', 'AuthController@dologin');
 
 Route::get('/elibrary/dashboard', 'LibraryController@dashboard');
 
@@ -37,6 +34,10 @@ Route::get('/elibrary/dashboard', 'LibraryController@dashboard');
     Route::get('/siswa/excel', 'SiswaController@excel')->name('excel');
     Route::get('/siswa/pdf','SiswaController@generatePDF');
     Route::post('/siswa/import_excel', 'SiswaController@import_excel');
+
+
+//guest
+Route::post('/guest/create', 'GuestController@create');
 //});
 
 Route::group(['middleware' => ['auth', 'checkRole:siswa,admin']], function () {
